@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "moduleResolution": "node16",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": [
+        "./cypress/e2e/pages/*"
+      ],
+      "@data/*": [
+        "./cypress/e2e/data/*"
+      ],
+      "@helpers": [
+        "./cypress/support/helpers"
+      ]
+    },
+    "lib": [
+      "es5",
+      "dom"
+    ],
+    "types": [
+      "cypress",
+      "node"
+    ],
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}
