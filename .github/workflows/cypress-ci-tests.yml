@@ -15,7 +15,7 @@ jobs:
     steps:
       # Checkout the repository code
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.2.0
 
       # Set up Node.js environment
       - name: Set up Node.js
@@ -40,14 +40,14 @@ jobs:
 
       # Upload Cypress screenshots (optional)
       - name: Upload Cypress screenshots
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3.2.0
         with:
           name: cypress-screenshots
           path: cypress/screenshots
 
       # Upload Cucumber HTML Report (optional)
       - name: Upload Cucumber HTML Report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3.2.0
         with:
           name: cucumber-html-report
           path: cypress/reports/cucumber-report.html
