@@ -19,9 +19,14 @@ jobs:
 
       # Set up Node.js environment
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3.2.0
         with:
           node-version: '16'
+
+      - name: Install dependencies
+        run: |
+            npm install esbuild@0.23.1  # Install specific version of esbuild
+            npm install
 
       # Install dependencies
       - name: Install dependencies
