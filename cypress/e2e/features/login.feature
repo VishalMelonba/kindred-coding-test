@@ -5,7 +5,7 @@ Feature: Login page
     Given A user lands on the "login_page"
 
   @KCT-1
-  Scenario: Success Logi
+  Scenario: Success Login
     When A user logs in as "standard_user"
     Then The url contains the "products_page" subdirectory
     And The page title "Products" is displayed
